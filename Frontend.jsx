@@ -1,41 +1,25 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './App.css'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-function App() {
- 
+function FondList() {
+  const [fonds, setFonds] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:5000/api/v1/fond')
+      .then(response => setFonds(response.data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
 
   return (
-    <>
-        <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-    </Navbar>
-    aaaa
-    </Container>
-    </>
-  )
+    <div>
+      <h1>Fonds</h1>
+      <ul>
+        {fonds.map(fond => (
+          <li key={fond.sifra}>{fond.naziv} - {fond.iznos_sredstava}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default App
+export default FondList;
