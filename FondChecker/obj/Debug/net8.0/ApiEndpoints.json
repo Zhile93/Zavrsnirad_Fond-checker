@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "FondChecker.Controllers.FondController",
+    "Method": "Get",
+    "RelativePath": "api/v1/Fond",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FondChecker.Controllers.FondController",
+    "Method": "Post",
+    "RelativePath": "api/v1/Fond",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fond",
+        "Type": "FondChecker.Models.Fond",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

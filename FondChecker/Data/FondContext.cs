@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FondChecker.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FondChecker.Data
 {
@@ -9,5 +10,7 @@ namespace FondChecker.Data
         { 
         
         }
+
+        public DbSet<Fond> Fond { get; set; }
     }
 }

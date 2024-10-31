@@ -1,6 +1,10 @@
-﻿namespace FondChecker.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FondChecker.Models
 {
-    public class Entitet
+    public abstract class Entitet
     {
+        [Key] 
+        public int Sifra { get; set; }
     }
 }
