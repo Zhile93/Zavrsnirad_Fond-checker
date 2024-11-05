@@ -24,5 +24,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FondChecker.Controllers.FondController",
+    "Method": "Put",
+    "RelativePath": "api/v1/Fond",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fond",
+        "Type": "FondChecker.Models.Fond",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FondChecker.Controllers.FondController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Fond/{sifra}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sifra",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
