@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fond Management</title>
+    <!-- Link to CSS file (optional) -->
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+    <h1>Fond Management</h1>
+
+    <!-- Form to Add/Edit Fond -->
+    <form id="fondForm">
+        <label for="naziv">Naziv:</label>
+        <input type="text" id="naziv" placeholder="Naziv" required>
+        
+        <label for="iznosSredstava">Iznos Sredstava:</label>
+        <input type="number" id="iznosSredstava" placeholder="Iznos Sredstava" required>
+        
+        <label for="brojProjekata">Broj Projekata:</label>
+        <input type="number" id="brojProjekata" placeholder="Broj Projekata" required>
+        
+        <label for="uProvedbiDo">U Provedbi Do:</label>
+        <input type="date" id="uProvedbiDo" placeholder="U Provedbi Do" required>
+        
+        <!-- Hidden field for Sifra (ID) -->
+        <input type="hidden" id="fondId">
+        
+        <button type="submit">Save</button>
+        <button type="button" id="cancelFondEdit">Cancel</

@@ -1,0 +1,96 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+form button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+form button[type="button"] {
+    background-color: #6c757d;
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+td button.edit-fond {
+    background-color: #28a745;
+}
+
+td button.delete-fond {
+    background-color: #dc3545;
+}
+
+td button:hover {
+    opacity: 0.9;
+}
