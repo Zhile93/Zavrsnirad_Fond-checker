@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vGjgBDSCYaIGp04+oiujIM4C3djqsp7CBsmoiB1feqw=",
+  "Hash": "mj2umZ+5wNIQ9q1qB1F5Z25cZkgY3q5B6cqz1bjifQE=",
   "Source": "FondChecker",
   "BasePath": "_content/FondChecker",
   "Mode": "Default",
@@ -16,25 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\html",
-      "SourceId": "FondChecker",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\",
-      "BasePath": "_content/FondChecker",
-      "RelativePath": "html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\html"
-    },
     {
       "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\index.html",
       "SourceId": "FondChecker",
