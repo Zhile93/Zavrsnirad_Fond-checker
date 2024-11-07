@@ -1,4 +1,3 @@
-C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\bin\Debug\net8.0\appsettings.json
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\bin\Debug\net8.0\FondChecker.staticwebassets.runtime.json
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\bin\Debug\net8.0\FondChecker.exe
