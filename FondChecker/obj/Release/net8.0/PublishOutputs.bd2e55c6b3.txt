@@ -1,5 +1,4 @@
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\obj\Release\net8.0\PubTmp\Out\FondChecker.exe
-C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\obj\Release\net8.0\PubTmp\Out\appsettings.json
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\obj\Release\net8.0\PubTmp\Out\FondChecker.dll
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\obj\Release\net8.0\PubTmp\Out\FondChecker.deps.json

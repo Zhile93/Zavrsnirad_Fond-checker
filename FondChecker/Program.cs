@@ -15,11 +15,11 @@ builder.Services.AddDbContext<FondContext>(options =>
 var app = builder.Build();
 
 // Enable Swagger for development only
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 // Enable default files and static files for serving index.html
 app.UseDefaultFiles();
