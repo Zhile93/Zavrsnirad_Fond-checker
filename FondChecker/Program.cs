@@ -14,12 +14,16 @@ builder.Services.AddDbContext<FondContext>(options =>
 
 var app = builder.Build();
 
-// Enable Swagger for development and testing
-app.UseSwagger();
-app.UseSwaggerUI();
+// Enable Swagger for development only
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-// Enable serving static files from wwwroot
-app.UseStaticFiles(); // <-- Add this line
+// Enable default files and static files for serving index.html
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
