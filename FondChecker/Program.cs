@@ -3,33 +3,25 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<FondContext>(opcije =>
+builder.Services.AddDbContext<FondContext>(options =>
 {
-    opcije.UseSqlServer(builder.Configuration.GetConnectionString("FondCheckerContext"));
-}
-);
-
+    options.UseSqlServer(builder.Configuration.GetConnectionString("FondCheckerContext"));
+});
 
 var app = builder.Build();
 
-//
-//if (app.Environment.IsDevelopment())
-//{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-//}
+// Enable Swagger for development and testing
+app.UseSwagger();
+app.UseSwaggerUI();
+
+// Enable serving static files from wwwroot
+app.UseStaticFiles(); // <-- Add this line
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
