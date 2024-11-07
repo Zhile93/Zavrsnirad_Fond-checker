@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FondChecker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+968d473db1f5f172b03b9b7a95f505adcaa5c750")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9218be58839e02d2d567b40d9dc14b796382e675")]
 [assembly: System.Reflection.AssemblyProductAttribute("FondChecker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FondChecker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

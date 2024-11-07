@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M6i3eVBtttx/2515I8QYLF7Y3bZhVwUFZFjf+vFUhpg=",
+  "Hash": "vGjgBDSCYaIGp04+oiujIM4C3djqsp7CBsmoiB1feqw=",
   "Source": "FondChecker",
   "BasePath": "_content/FondChecker",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\fondManager.html",
-      "SourceId": "FondChecker",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\",
-      "BasePath": "_content/FondChecker",
-      "RelativePath": "fondManager.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fondManager.html"
-    },
-    {
-      "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\fondManager.js",
-      "SourceId": "FondChecker",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\",
-      "BasePath": "_content/FondChecker",
-      "RelativePath": "fondManager.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fondManager.js"
-    },
     {
       "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\html",
       "SourceId": "FondChecker",
@@ -74,12 +36,12 @@
       "OriginalItemSpec": "wwwroot\\html"
     },
     {
-      "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\js",
+      "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\index.html",
       "SourceId": "FondChecker",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\",
       "BasePath": "_content/FondChecker",
-      "RelativePath": "js",
+      "RelativePath": "index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +52,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js"
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\js\\fondManager.js",
+      "SourceId": "FondChecker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\",
+      "BasePath": "_content/FondChecker",
+      "RelativePath": "js/fondManager.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\fondManager.js"
     },
     {
       "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\launchSettings.json",
@@ -129,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\PublishProfiles\\zhile93-001-site1 - Web Deploy.pubxml"
+    },
+    {
+      "Identity": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\style.css",
+      "SourceId": "FondChecker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Goran\\Documents\\GitHub\\Zavrsnirad_Fond-checker\\FondChecker\\wwwroot\\",
+      "BasePath": "_content/FondChecker",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
     }
   ]
 }

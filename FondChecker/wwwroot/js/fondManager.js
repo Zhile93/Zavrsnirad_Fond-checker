@@ -1,31 +1,29 @@
 $(document).ready(function () {
-    // Load the list of Fond entities on page load
+    // Load the list of Fonds on page load
     loadFondsList();
 
-    // Event listener for adding or updating Fond
+    // Event listener for adding or updating a Fond
     $('#fondForm').on('submit', saveFond);
 
-    // Event listener for resetting the form on cancel
+    // Event listener to clear the form on cancel
     $('#cancelFondEdit').on('click', function () {
         $('#fondForm')[0].reset();
-        $('#fondId').val(''); // Clear the Fond ID
+        $('#fondId').val(''); // Clear hidden ID field
     });
 
-    // ** Event Handlers for Action Buttons **
+    // Event listeners for editing and deleting a Fond
     $(document).on('click', '.edit-fond', function () {
-        const sifra = $(this).data('id');
-        loadFond(sifra); // Load Fond details for editing
+        const id = $(this).data('id');
+        loadFond(id); // Load the Fond details for editing
     });
 
     $(document).on('click', '.delete-fond', function () {
-        const sifra = $(this).data('id');
-        deleteFond(sifra); // Delete Fond by ID
+        const id = $(this).data('id');
+        deleteFond(id); // Delete the Fond
     });
 });
 
-// ** CRUD Functions for Fond **
-
-// Load the list of Fonds and display them in a table
+// Load the list of Fonds and display in table
 function loadFondsList() {
     $.getJSON('/api/v1/Fond', function (fonds) {
         const fondsTableBody = $('#fondsTableBody');
@@ -47,9 +45,9 @@ function loadFondsList() {
     });
 }
 
-// Load a specific Fond by ID (Sifra) for editing
-function loadFond(sifra) {
-    $.getJSON(`/api/v1/Fond/${sifra}`, function (fond) {
+// Load a specific Fond by ID to edit
+function loadFond(id) {
+    $.getJSON(`/api/v1/Fond/${id}`, function (fond) {
         $('#fondId').val(fond.sifra);
         $('#naziv').val(fond.naziv);
         $('#iznosSredstava').val(fond.iznosSredstava);
@@ -60,11 +58,11 @@ function loadFond(sifra) {
     });
 }
 
-// Save (add or update) a Fond
+// Save a new or updated Fond
 function saveFond(event) {
     event.preventDefault();
-    const sifra = $('#fondId').val();
-    const isUpdate = !!sifra; // Determine if it's an update or a new entry
+    const id = $('#fondId').val();
+    const isUpdate = !!id;
 
     const fond = {
         naziv: $('#naziv').val(),
@@ -74,11 +72,11 @@ function saveFond(event) {
     };
 
     if (isUpdate) {
-        fond.sifra = sifra;
+        fond.sifra = id;
     }
 
     const requestType = isUpdate ? 'PUT' : 'POST';
-    const requestUrl = isUpdate ? `/api/v1/Fond` : `/api/v1/Fond`;
+    const requestUrl = '/api/v1/Fond';
 
     $.ajax({
         url: requestUrl,
@@ -86,9 +84,9 @@ function saveFond(event) {
         contentType: 'application/json',
         data: JSON.stringify(fond),
         success: function () {
-            alert('Fond successfully saved.');
+            alert('Fond saved successfully.');
             $('#fondForm')[0].reset();
-            $('#fondId').val(''); // Clear the form ID field
+            $('#fondId').val('');
             loadFondsList(); // Reload the list of Fonds
         },
         error: function () {
@@ -97,13 +95,13 @@ function saveFond(event) {
     });
 }
 
-// Delete a Fond by its ID (Sifra)
-function deleteFond(sifra) {
+// Delete a Fond by ID
+function deleteFond(id) {
     $.ajax({
-        url: `/api/v1/Fond/${sifra}`,
+        url: `/api/v1/Fond/${id}`,
         type: 'DELETE',
         success: function () {
-            alert('Fond successfully deleted.');
+            alert('Fond deleted successfully.');
             loadFondsList(); // Reload the list of Fonds
         },
         error: function () {

@@ -75,3 +75,4 @@ C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\obj\Release\
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\obj\Release\net8.0\FondChecker.pdb
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\obj\Release\net8.0\FondChecker.genruntimeconfig.cache
 C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\obj\Release\net8.0\ref\FondChecker.dll
+C:\Users\Goran\Documents\GitHub\Zavrsnirad_Fond-checker\FondChecker\bin\Release\net8.0\FondChecker.staticwebassets.runtime.json

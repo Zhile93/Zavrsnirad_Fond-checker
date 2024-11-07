@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fond Management</title>
-    <!-- Link to CSS file (optional) -->
+    <!-- Link to CSS file -->
     <link rel="stylesheet" href="../css/style.css"> 
 </head>
 <body>
@@ -28,4 +28,26 @@
         <input type="hidden" id="fondId">
         
         <button type="submit">Save</button>
-        <button type="button" id="cancelFondEdit">Cancel</
+        <button type="button" id="cancelFondEdit">Cancel</button>
+    </form>
+
+    <!-- Table to Display List of Fonds -->
+    <table>
+        <thead>
+            <tr>
+                <th>Naziv</th>
+                <th>Iznos Sredstava</th>
+                <th>Broj Projekata</th>
+                <th>U Provedbi Do</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="fondsTableBody">
+            <!-- JavaScript will dynamically add rows here -->
+        </tbody>
+    </table>
+
+    <!-- Link to JavaScript file (place before closing body tag) -->
+    <script src="../js/fondManager.js"></script>
+</body>
+</html>
